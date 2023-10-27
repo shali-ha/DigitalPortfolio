@@ -1,0 +1,164 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> Your Name -Shaliha.S</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: gray;
+            
+            }
+            header {
+                background-color: black;
+                color: whitesmoke;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative; /* Add this */
+            }
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+            /* Add styles for the round profile picture*/
+            .profile-picture {
+                width: 100px; /* Adjust the size as needed */
+                height: 100px;
+                border-radius: 75%; /* create a circular shape */
+                object-fit: cover; /* to ensure the image fills the circular area */
+                position: absolute; /* Add this */
+                top: 75px; /*Adjust top position as needed */
+                left: 75px; /*Adjust left position as needed */
+            }
+            nav{
+                background-color: white;
+                color: whitesmoke;
+                text-align: center;
+            }
+            nav ul {
+                list-style-type: disc;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin: 0 20px;
+            }
+            nav ul li a {
+                text-decoration: wavy;
+                color: gray;
+            }
+            .section-content {
+                background-color: white;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .download-button {
+                background-color: whitesmoke;
+                color:  gray;
+                padding: 0.5rem 1rem;
+                text-decoration: whitesmoke;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .download-button:hover {
+                background-color: white;
+            }
+            footer {
+                text-align: center;
+                padding: 1rem;
+                background-color: whitesmoke;
+                color: black;
+            }
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+ </style>
+    </head>
+    <body> 
+        <header>
+            <div class="header-content">
+                <!-- Add your profile picture here-->
+                <img src="1698393062397.jpg" alt="Your profile-picture"class="profile-picture">
+                <h1>Shaliha.S</h1>
+                <p>having better communication skills</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#resume">resume</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Hello everyone!this is Shaliha I am a programmer.</p>
+            </div>
+        </section> 
+        <section id="education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <p>Bharathidasan University-Computer Science</p>
+                </div>
+        </section>
+                <section id="skills">
+                    <div class="section-content">
+                        <h2>skills</h2>
+                        <ul>
+                            <li>java</li>
+                            <li>c++</li>
+                            <li>programming</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section id="projects">
+                    <div class="section-content">
+                        <h2>Projects</h2>
+                        <ul>
+                            <li><a href="#">Coding and Cloud</a></li>
+                            <li><a href="#">Web Designing</a></li>
+                            <!-- Add more projects links here-->
+                        </ul>
+                    </div>
+                </section>
+                <section id="resume">
+                    <center>
+                        <div class="Shaliha resume">
+                            <h2>Resume</h2>
+                            <a href="Shaliha.S_1.pdf"class="download-button">download cv</a>
+                        </div>
+                    </center>
+                </section>
+                <footer>
+                    <p>&copy;2023 Shaliha</p>
+                </footer>
+                <script>
+                    // smooth scrolling to section when clicking on navigation links
+                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                        anchor.addEventListener('click',function(e) {
+                            e.prventDefault();
+
+                            const targetId =this.getAttribute('href').substring(1);
+                            const targetElement = document.getElementById(targetid);
+                            if(targetElement) {
+                                window.scrollTo({
+                                    top:
+                                    targetElement.offsetTop,
+                                    behavior:'smooth'
+                                });
+                            }
+                        });
+                    });
+
+                                </script>
+                                
+    </body>
+</html>
